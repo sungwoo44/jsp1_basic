@@ -55,7 +55,7 @@
 		<li><c:out value="${fn:contains(msg,'am')}" /></li>
 		<li><c:out value="${fn:contains(msg,'are')}" /></li>
 		<li><c:out value="${fn:replace(msg,'Twice','BTS')}" /></li>
-
+ 
 
 		<c:set value="he                                 lllo   ~~~~!!" var="temp" />
 		<li>공백이 많은 문자열<c:out value="${temp}" /></li>

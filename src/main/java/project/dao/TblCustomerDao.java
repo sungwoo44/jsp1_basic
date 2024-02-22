@@ -126,7 +126,7 @@ public class TblCustomerDao {
                                         rs.getDate(5)));
             }
         }catch(SQLException e){
-            System.out.println("allCustomers 예외 발생 : " + e.getMessage());
+            System.out.println("selectAll 예외 발생 : " + e.getMessage());
         }
 
         return list;
