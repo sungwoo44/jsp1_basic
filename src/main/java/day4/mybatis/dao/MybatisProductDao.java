@@ -8,6 +8,7 @@ import org.apache.ibatis.session.SqlSessionFactory;
 
 import day4.mybatis.dto.BuyDto;
 import day4.mybatis.dto.ProductDto;
+import day4.mybatis.dto.cateDto;
 import mybatis.SqlSessionBean;
 
 public class MybatisProductDao {
@@ -59,7 +60,20 @@ public class MybatisProductDao {
 		return result;
 	}
 	
+	public List<ProductDto> search(Map<String,Object> map){
+		SqlSession sqlSession = sessionFactory.openSession();
+		List<ProductDto> list = sqlSession.selectList("tblproduct.search",map);
+		sqlSession.close();
+		return list;
+	}
 	
+	public List<cateDto> getCategories(){
+		SqlSession sqlSession = sessionFactory.openSession();
+		List<cateDto> list = sqlSession.selectList("tblproduct.getCategories");
+		sqlSession.close();
+		return list;
+
+	}
 	
 	
 }

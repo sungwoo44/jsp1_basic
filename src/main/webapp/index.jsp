@@ -14,6 +14,14 @@
 	<!-- html에서 url 지정하는 href 속성값이 /  로 시작하면 컨텍스트 /jsp1 이 사라집니다.
 			<li><a href="/customers.cc">고객 전체 조회</li> 일경우 ->->  http://localhost:8088/customers.cc
 	 -->
+	 
+	 <h3>상품 검색 -day5</h3>
+	 <ul>
+	 	<li><a href="search.cc">상품 조회</a>
+	 	<li> 마이바티스 동적 쿼리로 구현하기</a>
+	 	<li>검색 값 전달하는 버슬리</a>
+	 	
+	 </ul>
 	<hr>
 	<h3>TBL_고객 테이블의 데이터 조희/저장 서블릿 테스트 (day3)</h3>
 	<h4>GET 방식 요청</h4>
