@@ -60,6 +60,8 @@ public class MybatisBuyDao {
 		List<BuyDto> list = sqlSession.selectList("tblbuy.selectCustomerBuyList",customerid);
 		sqlSession.close();
 		return list;
+		
+		
 	}
 	
 	
