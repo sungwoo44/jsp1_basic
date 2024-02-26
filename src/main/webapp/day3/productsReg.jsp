@@ -17,18 +17,18 @@
               <li>상품코드</li>
               <li>
                 <input class="id-input"  name="pcode" type="text"
-                  placeholder="상품코드를 입력해 주세요." />
+                  placeholder="상품코드를 입력해 주세요.(최대20)" />
               </li>
               <!-- <li>비밀번호 <label>(영문 대/소문자, 특수문자를 포함 10-20자로 입력해주세요.)</label> <br><label>사용가능 특수문자 : !@#$%^&* </label></li>
               <li><input name="password" type="password" placeholder="비밀번호를 입력해 주세요." /></li>
               <li>비밀번호 확인</li>
               <li><input name="password2" type="password" placeholder="비밀번호를 다시 한번 입력해 주세요." /></li> -->
               <li>카테고리</li>
-              <li><input name="category" type="text" placeholder="상품 카테고리를 입력하세요" /></li>
+              <li><input name="category" type="text" placeholder="상품 카테고리를 입력하세요(최대2)" /></li>
               <li>상품명</li>
               <li><input  name="pname" type="text" placeholder="상품명을 입력해 주세요." /></li>
               <li>가격</li>
-              <li><input  name="price" type="text" placeholder="가격을 입력하세요" /></li>
+              <li><input  name="price" type="text" placeholder="가격을 입력하세요(최대9)" /></li>
             </ul>
             <button class="join-btn" >상품등록</button>
           </form>

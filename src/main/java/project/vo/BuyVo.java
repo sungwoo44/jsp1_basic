@@ -5,11 +5,13 @@ import java.sql.Date;
 import lombok.AllArgsConstructor;
 import lombok.EqualsAndHashCode;
 import lombok.Getter;
+import lombok.NoArgsConstructor;
 import lombok.ToString;
 
 @Getter
 @ToString
-@AllArgsConstructor
+@AllArgsConstructor			
+//@NoArgsConstructor
 @EqualsAndHashCode
 public class BuyVo {
 	private int buyIdx;

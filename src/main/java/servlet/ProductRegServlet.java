@@ -1,6 +1,7 @@
 package servlet;
 
 import java.io.IOException;
+import java.io.PrintWriter;
 import java.util.List;
 
 import javax.servlet.RequestDispatcher;
@@ -10,6 +11,7 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
+import org.apache.catalina.connector.Response;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -52,9 +54,21 @@ public class ProductRegServlet extends HttpServlet {
 		logger.info("\t 입력 값 vo : {}", vo);
 		
 		TblProductDao dao = new TblProductDao();
-		dao.regi(vo);
+		int result = dao.insert(vo);
 		
-		response.sendRedirect("products.cc");
+//		response.sendRedirect("products.cc");		--> 대신에 alert 출력
+		
+		String message = "상품이 등록이 완료되었습니다. ";
+		if(result ==0) {
+			message = "상품 등록 오류 발생!";
+		}
+		response.setContentType("text/html; charset=UTF-8");
+		PrintWriter out = response.getWriter();
+		out.print("<script>");
+		out.print("alert('"+message+"');");
+		out.print("location.href='products.cc';");
+		out.print("</script>");
+					
 		
 		
 		

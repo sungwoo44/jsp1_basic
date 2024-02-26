@@ -17,16 +17,16 @@
               <li>아이디</li>
               <li>
                 <input class="id-input"  name="userid" type="text"
-                  placeholder="아이디를 입력해 주세요." />
+                  placeholder="아이디를 입력해 주세요.(최대40)" />
               </li>
               <!-- <li>비밀번호 <label>(영문 대/소문자, 특수문자를 포함 10-20자로 입력해주세요.)</label> <br><label>사용가능 특수문자 : !@#$%^&* </label></li>
               <li><input name="password" type="password" placeholder="비밀번호를 입력해 주세요." /></li>
               <li>비밀번호 확인</li>
               <li><input name="password2" type="password" placeholder="비밀번호를 다시 한번 입력해 주세요." /></li> -->
               <li>이름</li>
-              <li><input name="name" type="text" placeholder="이름" /></li>
+              <li><input name="name" type="text" placeholder="이름(최대13)" /></li>
               <li>이메일</li>
-              <li><input  name="email" type="text" placeholder="이메일을 입력해 주세요." /></li>
+              <li><input  name="email" type="text" placeholder="이메일을 입력해 주세요.(최대40)" /></li>
               <li>나이</li>
               <li><input  name="age" type="text" placeholder="나이를 입력하세요" /></li>
             </ul>
